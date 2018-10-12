@@ -51,12 +51,13 @@
                 console.log(op);
                 var ch = document.getElementById("demo").value;
                 console.log(ch);
-                if(ch=='hello word')
+                if(ch=='hello world')
                 {
                     
                     exp = '2';
-                    document.getElementById('demo').value=exp[0];
+                    document.getElementById('demo').value=exp;
                     num1 =  parseInt(exp,10);
+                    return 0;
                 }
                 else
                 {
@@ -84,7 +85,7 @@
             function three()
             {
                 var ch = document.getElementById("demo").value;
-                if(ch=='hello word')
+                if(ch=='hello world')
                 {
                     
                     exp = '3';
@@ -117,7 +118,7 @@
             function four()
             {
                 var ch = document.getElementById("demo").value;
-                if(ch=='hello word')
+                if(ch=='hello world')
                 {
                     
                     exp = '4';
@@ -150,7 +151,7 @@
             function five()
             {
                 var ch = document.getElementById("demo").value;
-                if(ch=='hello word')
+                if(ch=='hello world')
                 {
                     
                     exp = '5';
@@ -183,7 +184,7 @@
             function six()
             {
                 var ch = document.getElementById("demo").value;
-                if(ch=='hello word')
+                if(ch=='hello world')
                 {
                     
                     exp = '6';
@@ -216,7 +217,7 @@
             function seven()
             {
                 var ch = document.getElementById("demo").value;
-                if(ch=='hello word')
+                if(ch=='hello world')
                 {
                     
                     exp = '7';
@@ -249,7 +250,7 @@
             function eight()
             {
                 var ch = document.getElementById("demo").value;
-                if(ch=='hello word')
+                if(ch=='hello world')
                 {
                     
                     exp = '8';
@@ -282,7 +283,7 @@
             function nine()
             {
                 var ch = document.getElementById("demo").value;
-                if(ch=='hello word')
+                if(ch=='hello world')
                 {
                     
                     exp = '9';
@@ -315,7 +316,7 @@
             function zero()
             {
                 var ch = document.getElementById("demo").value;
-                if(ch=='hello word')
+                if(ch=='hello world')
                 {
                     
                     exp = '0';
@@ -361,5 +362,7 @@
             {
                 var rs = num1+num2;
                 document.getElementById('demo').value = exp+op+aftropexp+'='+rs;
+                // num1 = rs;
+                // num2 = 0;
             }
            
