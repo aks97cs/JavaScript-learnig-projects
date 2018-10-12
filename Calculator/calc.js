@@ -1,12 +1,13 @@
-
-
             var num1;
             var num2;
             var op;
             var res;
+            var exp;
+            var explen;
+            //console.log(op);
             document.getElementById("demo").value="hello world";
             var str = document.getElementById("demo").value;
-            console.log(typeof str);
+            
             document.getElementById('demo1').innerHTML = str;
             function one()
             {
@@ -15,13 +16,27 @@
                 
                 if(ch=='hello world')
                 {
-                    document.getElementById('demo').value="1";
-                    num1 =  1;
+                    exp = '1';
+                    document.getElementById('demo').value=exp[0];
+                    num1 =  parseInt(exp,10);
 
                 }
                 else
                 {
-                    num2 = 1;
+                    if(op == undefined)
+                    {
+                        exp = exp + '1';
+                        document.getElementById('demo').value=exp;
+                        num1 = parseInt(exp,10);
+                        console.log("exp = " + exp);
+                        console.log("num1 = "+num1);
+                    }
+                    else
+                    {
+                        num2 = 1;
+                    }
+                    
+                  
                     result();
                 }
             }
@@ -35,6 +50,7 @@
                 }
                 else
                 {
+                    document.getElementById('demo').value="2";
                     num2 = 2;
                     result();
                 }
@@ -52,4 +68,4 @@
                     document.getElementById('demo').value = num1+num2;
                 }
             }
-           // document.getElementById('demo').value
+           
