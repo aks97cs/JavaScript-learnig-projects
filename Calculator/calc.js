@@ -348,7 +348,7 @@
             }
             function operator()
             {
-                document.getElementById('demo').value = "+";
+                document.getElementById('demo').value = num1 + "+";
                 op = '+';
             }
             function result()
@@ -360,9 +360,93 @@
             }
             function equal()
             {
+                // var rs = num1+num2;
+                // document.getElementById('demo').value = exp+op+aftropexp+'='+rs;
+                //  num1 = rs;
+                //  num2 = undefined;
+                //  aftropexp = '0'
+                // exp = rs;
+                // op = undefined;
+                // console.log(exp);
+                switch(op)
+                {
+
+                 case '+':   
                 var rs = num1+num2;
                 document.getElementById('demo').value = exp+op+aftropexp+'='+rs;
-                // num1 = rs;
-                // num2 = 0;
+                 num1 = rs;
+                 num2 = undefined;
+                 aftropexp = '0'
+                exp = rs;
+                op = undefined;
+                console.log(exp);
+                break;
+                case '-':
+                
+                var rs = num1-num2;
+                document.getElementById('demo').value = exp+op+aftropexp+'='+rs;
+                 num1 = rs;
+                 num2 = undefined;
+                 aftropexp = '0'
+                exp = rs;
+                op = undefined;
+                console.log(exp);
+                break;
+
+                case '/':
+                
+                var rs = num1/num2;
+                document.getElementById('demo').value = exp+op+aftropexp+'='+rs;
+                 num1 = rs;
+                 num2 = undefined;
+                 aftropexp = '0'
+                exp = rs;
+                op = undefined;
+                console.log(exp);
+                break;
+
+                case '*':
+                
+                var rs = num1*num2;
+                document.getElementById('demo').value = exp+op+aftropexp+'='+rs;
+                 num1 = rs;
+                 num2 = undefined;
+                 aftropexp = '0'
+                exp = rs;
+                op = undefined;
+                console.log(exp);
+                break;
+                }           
+
+                
             }
+
+            
+            function c()
+            {
+                //console.log("hey");
+                document.getElementById('demo').value = " ";
+                exp = '0';
+                aftropexp = '0';
+                
+            }
+            function divide()
+            {
+                    
+                document.getElementById('demo').value = num1 + "/";
+                op = '/';
+            }
+            function multiply()
+            {
+                
+                document.getElementById('demo').value =num1 +  "*";
+                op = '*';
+            }
+            function minus()
+            {
+                
+                document.getElementById('demo').value = num1 + "-";
+                op = '-';
+            }
+
            
