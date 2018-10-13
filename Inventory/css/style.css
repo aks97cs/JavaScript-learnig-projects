@@ -1,0 +1,17 @@
+.head{
+    background-color: aquamarine;
+    height:8%;
+    width: 100%;
+}
+.sidebar{
+    margin-top:5%;
+    width:30%;
+}
+.cbody{
+    width: 70%;
+    margin-left: 19%;
+    margin-top: -25%;   
+}
+img{
+    width: 100%;
+}
