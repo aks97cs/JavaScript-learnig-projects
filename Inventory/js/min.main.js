@@ -1,10 +1,19 @@
 var a;
 var additem;
-function inventory()
-{
-    
+var billingc;
+var billingItem;
 
-    a = "<table>\
+billingc = "<form>\
+<table>\
+    <tr>\
+        <th><input type='text' name='ProductId' placeholder='Product Id'></th>\
+        <th><input type='text' name='Price' placeholder='Price'></th>\
+        <th><input type='text' name='discount' placeholder='discount'></th>\
+        <th><input type='submit' value='Add'></th>\
+    </tr>\
+</table>\
+</form>";
+a = "<table>\
     <tr>\
         <th>\
             <button onclick=addProduct()>Add New+</button>\
@@ -16,11 +25,8 @@ function inventory()
          <button>Search</button></th>\
     </tr>\
     </table>";
-    document.getElementById('main').innerHTML =a;
-    console.log("test");
-}
-function addProduct()
-{
+
+
     additem = "<h3>Add New Item </h3>\
     <form method='post' action=''>\
     <table>\
@@ -57,7 +63,22 @@ function addProduct()
             <th></label><input type='reset'></th>\
         </tr>\
         </table>\
-    </form>"; 
+    </form>";
+    
+function inventory()
+{
+    
+
+    document.getElementById('main').innerHTML =a;
+    console.log("test");
+}
+function addProduct()
+{
+    
     document.getElementById('main').innerHTML = a + additem;
     //document.getElementById('main').innerHTML="okok";
+}
+function billing()
+{
+    document.getElementById('main').innerHTML = billingc;
 }
